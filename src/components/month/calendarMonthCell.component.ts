@@ -5,23 +5,20 @@ import { MonthViewDay } from 'calendar-utils';
   selector: 'mwl-calendar-month-cell',
   template: `
     <div class="cal-cell-top">
-      <span class="cal-day-badge" *ngIf="day.badgeTotal > 0">{{ day.badgeTotal }}</span>
       <span class="cal-day-number">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>
     </div>
-    <div class="cal-events">
-      <div
-        class="cal-event"
-        *ngFor="let event of day.events"
-        [style.backgroundColor]="event.color.primary"
-        [ngClass]="event?.cssClass"
-        (mouseenter)="highlightDay.emit({event: event})"
-        (mouseleave)="unhighlightDay.emit({event: event})"
-        [mwlCalendarTooltip]="event | calendarEventTitle:'monthTooltip'"
-        [tooltipPlacement]="tooltipPlacement"
-        mwlDraggable
-        [dropData]="{event: event}"
-        [dragAxis]="{x: event.draggable, y: event.draggable}">
-      </div>
+    <div
+      class="cal-event"
+      *ngFor="let event of day.events"
+      [style.backgroundColor]="event.color.primary"
+      [ngClass]="event?.cssClass"
+      (mouseenter)="highlightDay.emit({event: event})"
+      (mouseleave)="unhighlightDay.emit({event: event})"
+      [mwlCalendarTooltip]="event | calendarEventTitle:'monthTooltip'"
+      [tooltipPlacement]="tooltipPlacement"
+      mwlDraggable
+      [dropData]="{event: event}"
+      [dragAxis]="{x: event.draggable, y: event.draggable}">
     </div>
   `,
   host: {
