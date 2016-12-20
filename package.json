@@ -1,6 +1,6 @@
 {
   "name": "angular-calendar",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A calendar component that can display events on a month, week or day view",
   "main": "./dist/umd/angular-calendar.js",
   "style": "./dist/css/angular-calendar.css",
@@ -19,7 +19,6 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "typedoc": "typedoc --options typedoc.json src/calendar.module.ts src/components/day/calendarDayView.component.ts src/components/week/calendarWeekView.component.ts src/components/month/calendarMonthView.component.ts src/pipes/calendarDate.pipe.ts src/interfaces src/providers",
     "gh-pages": "git checkout gh-pages && git merge master --no-edit && npm run build:demo && npm run typedoc && git add . && git commit -m 'chore: build demo and docs' && git push && git checkout master",
-    "prerelease": "npm test",
     "release": "git add package.json && git commit -m 'chore: bump version number' && standard-version --first-release && git push --follow-tags origin master && npm run build:dist && npm publish",
     "postrelease": "npm run build:clean && npm run gh-pages"
   },
