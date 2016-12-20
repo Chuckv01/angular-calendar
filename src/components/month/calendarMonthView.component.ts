@@ -262,10 +262,6 @@ export class CalendarMonthViewComponent implements OnChanges, OnInit, OnDestroy 
     this.refreshHeader();
     this.refreshBody();
     this.checkActiveDayIsOpen();
-
-    this.view.days.forEach(day => {
-      delete day.backgroundColor;
-    });
   }
 
 }

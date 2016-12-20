@@ -1246,9 +1246,6 @@ var CalendarMonthViewComponent = (function () {
         this.refreshHeader();
         this.refreshBody();
         this.checkActiveDayIsOpen();
-        this.view.days.forEach(function (day) {
-            delete day.backgroundColor;
-        });
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 

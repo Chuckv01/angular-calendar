@@ -136,9 +136,6 @@ export var CalendarMonthViewComponent = (function () {
         this.refreshHeader();
         this.refreshBody();
         this.checkActiveDayIsOpen();
-        this.view.days.forEach(function (day) {
-            delete day.backgroundColor;
-        });
     };
     CalendarMonthViewComponent.decorators = [
         { type: Component, args: [{
