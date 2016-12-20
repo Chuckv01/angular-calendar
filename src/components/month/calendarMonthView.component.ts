@@ -44,6 +44,7 @@ import { CalendarEventTimesChangedEvent } from '../../interfaces/calendarEventTi
         <div *ngFor="let rowIndex of view.rowOffsets">
           <div class="cal-cell-row">
             <mwl-calendar-month-cell
+              tappable
               *ngFor="let day of view.days | slice : rowIndex : rowIndex + 7"
               [class.cal-drag-over]="day.dragOver"
               [day]="day"
