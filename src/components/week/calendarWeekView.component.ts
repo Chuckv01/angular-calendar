@@ -28,46 +28,7 @@ import { CalendarEventTimesChangedEvent } from '../../interfaces/calendarEventTi
 
 @Component({
   selector: 'mwl-calendar-week-view',
-  template: `
-    <div class="cal-week-view" #weekViewContainer>
-      <div class="cal-day-headers">
-        <mwl-calendar-week-view-header
-          *ngFor="let day of days"
-          [day]="day"
-          [locale]="locale"
-          (click)="dayClicked.emit({date: day.date})">
-        </mwl-calendar-week-view-header>
-      </div>
-      <div *ngFor="let eventRow of eventRows" #eventRowContainer>
-        <div
-          class="cal-event-container"
-          #event
-          [class.cal-draggable]="weekEvent.event.draggable"
-          *ngFor="let weekEvent of eventRow.row"
-          [style.width]="((100 / 7) * weekEvent.span) + '%'"
-          [style.marginLeft]="((100 / 7) * weekEvent.offset) + '%'"
-          mwlResizable
-          [resizeEdges]="{left: weekEvent.event?.resizable?.beforeStart, right: weekEvent.event?.resizable?.afterEnd}"
-          [resizeSnapGrid]="{left: getDayColumnWidth(eventRowContainer), right: getDayColumnWidth(eventRowContainer)}"
-          [validateResize]="validateResize"
-          (resizeStart)="resizeStarted(weekViewContainer, weekEvent, $event)"
-          (resizing)="resizing(weekEvent, $event, getDayColumnWidth(eventRowContainer))"
-          (resizeEnd)="resizeEnded(weekEvent)"
-          mwlDraggable
-          [dragAxis]="{x: weekEvent.event.draggable && !currentResize, y: false}"
-          [dragSnapGrid]="{x: getDayColumnWidth(eventRowContainer)}"
-          [validateDrag]="validateDrag"
-          (dragStart)="dragStart(weekViewContainer, event)"
-          (dragEnd)="eventDragged(weekEvent, $event.x, getDayColumnWidth(eventRowContainer))">
-          <mwl-calendar-week-view-event
-            [weekEvent]="weekEvent"
-            [tooltipPlacement]="tooltipPlacement"
-            (eventClicked)="eventClicked.emit({event: weekEvent.event})">
-          </mwl-calendar-week-view-event>
-        </div>
-      </div>
-    </div>
-  `
+  template: ``
 })
 export class CalendarWeekViewComponent implements OnChanges, OnInit, OnDestroy {
 
