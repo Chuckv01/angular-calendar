@@ -48,6 +48,10 @@ import { CalendarDateFormatter } from './providers/calendarDateFormatter.provide
     CalendarDayViewComponent,
     CalendarWeekViewComponent,
     CalendarMonthViewComponent,
+    CalendarDate
+    /*CalendarDayViewComponent,
+    CalendarWeekViewComponent,
+    CalendarMonthViewComponent,
     CalendarEventActionsComponent,
     CalendarEventTitleComponent,
     CalendarMonthCellComponent,
@@ -60,7 +64,7 @@ import { CalendarDateFormatter } from './providers/calendarDateFormatter.provide
     CalendarTooltipWindowComponent,
     CalendarTooltipDirective,
     CalendarDate,
-    CalendarEventTitlePipe
+    CalendarEventTitlePipe*/
   ],
   entryComponents: [CalendarTooltipWindowComponent]
 })

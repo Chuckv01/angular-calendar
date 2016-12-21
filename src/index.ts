@@ -8,7 +8,7 @@ export * from './calendar.module';
 export {CalendarEvent, EventAction as CalendarEventAction} from 'calendar-utils';
 
 
-export * from './components/day/calendarDayView.component';
+/*export * from './components/day/calendarDayView.component';
 export * from './components/day/calendarAllDayEvent.component';
 export * from './components/day/calendarDayViewEvent.component';
 export * from './components/day/calendarDayViewHourSegment.component';
@@ -26,4 +26,4 @@ export * from './pipes/calendarEventTitle.pipe';
 
 export * from '@angular/common';
 export * from 'angular-resizable-element';
-export * from 'angular-draggable-droppable';
+export * from 'angular-draggable-droppable';*/
