@@ -1,6 +1,7 @@
 import { NgModule, ModuleWithProviders, Provider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ResizableModule } from 'angular-resizable-element';
+import { DragAndDropModule } from 'angular-draggable-droppable';
 import { CalendarDayViewComponent } from './components/day/calendarDayView.component';
 import { CalendarWeekViewComponent } from './components/week/calendarWeekView.component';
 import { CalendarMonthViewComponent } from './components/month/calendarMonthView.component';
@@ -40,7 +41,8 @@ import { CalendarDateFormatter } from './providers/calendarDateFormatter.provide
   ],
   imports: [
     CommonModule,
-    ResizableModule
+    ResizableModule,
+    DragAndDropModule
   ],
   exports: [
     CalendarDayViewComponent,

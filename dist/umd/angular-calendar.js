@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@angular/core"), require("calendar-utils"), require("rxjs/Subject"), require("angular-resizable-element"), require("@angular/common"), require("date-fns/add_days/index"), require("date-fns/add_minutes/index"), require("date-fns/add_seconds/index"), require("date-fns/difference_in_seconds/index"), require("date-fns/get_date/index"), require("date-fns/get_iso_week/index"), require("date-fns/get_month/index"), require("date-fns/get_year/index"), require("date-fns/is_same_day/index"), require("date-fns/set_date/index"), require("date-fns/set_month/index"), require("date-fns/set_year/index"), require("@angular/platform-browser"));
+		module.exports = factory(require("@angular/core"), require("calendar-utils"), require("rxjs/Subject"), require("angular-resizable-element"), require("@angular/common"), require("angular-draggable-droppable"), require("date-fns/add_days/index"), require("date-fns/add_minutes/index"), require("date-fns/add_seconds/index"), require("date-fns/difference_in_seconds/index"), require("date-fns/get_date/index"), require("date-fns/get_iso_week/index"), require("date-fns/get_month/index"), require("date-fns/get_year/index"), require("date-fns/is_same_day/index"), require("date-fns/set_date/index"), require("date-fns/set_month/index"), require("date-fns/set_year/index"), require("@angular/platform-browser"));
 	else if(typeof define === 'function' && define.amd)
-		define(["@angular/core", "calendar-utils", "rxjs/Subject", , "@angular/common", , , , , , , , , , , , , "@angular/platform-browser"], factory);
+		define(["@angular/core", "calendar-utils", "rxjs/Subject", , "@angular/common", , , , , , , , , , , , , , "@angular/platform-browser"], factory);
 	else if(typeof exports === 'object')
-		exports["angularCalendar"] = factory(require("@angular/core"), require("calendar-utils"), require("rxjs/Subject"), require("angular-resizable-element"), require("@angular/common"), require("date-fns/add_days/index"), require("date-fns/add_minutes/index"), require("date-fns/add_seconds/index"), require("date-fns/difference_in_seconds/index"), require("date-fns/get_date/index"), require("date-fns/get_iso_week/index"), require("date-fns/get_month/index"), require("date-fns/get_year/index"), require("date-fns/is_same_day/index"), require("date-fns/set_date/index"), require("date-fns/set_month/index"), require("date-fns/set_year/index"), require("@angular/platform-browser"));
+		exports["angularCalendar"] = factory(require("@angular/core"), require("calendar-utils"), require("rxjs/Subject"), require("angular-resizable-element"), require("@angular/common"), require("angular-draggable-droppable"), require("date-fns/add_days/index"), require("date-fns/add_minutes/index"), require("date-fns/add_seconds/index"), require("date-fns/difference_in_seconds/index"), require("date-fns/get_date/index"), require("date-fns/get_iso_week/index"), require("date-fns/get_month/index"), require("date-fns/get_year/index"), require("date-fns/is_same_day/index"), require("date-fns/set_date/index"), require("date-fns/set_month/index"), require("date-fns/set_year/index"), require("@angular/platform-browser"));
 	else
-		root["angularCalendar"] = factory(root["ng"]["core"], root["calendarUtils"], root["rx"]["Subject"], root["angularResizableElement"], root["ng"]["common"], root["dateFns"]["addDays"], root["dateFns"]["addMinutes"], root["dateFns"]["addSeconds"], root["dateFns"]["differenceInSeconds"], root["dateFns"]["getDate"], root["dateFns"]["getISOWeek"], root["dateFns"]["getMonth"], root["dateFns"]["getYear"], root["dateFns"]["isSameDay"], root["dateFns"]["setDate"], root["dateFns"]["setMonth"], root["dateFns"]["setYear"], root["ng"]["platformBrowser"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_24__, __WEBPACK_EXTERNAL_MODULE_25__, __WEBPACK_EXTERNAL_MODULE_33__, __WEBPACK_EXTERNAL_MODULE_34__, __WEBPACK_EXTERNAL_MODULE_35__, __WEBPACK_EXTERNAL_MODULE_36__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__, __WEBPACK_EXTERNAL_MODULE_40__, __WEBPACK_EXTERNAL_MODULE_41__, __WEBPACK_EXTERNAL_MODULE_42__, __WEBPACK_EXTERNAL_MODULE_43__, __WEBPACK_EXTERNAL_MODULE_44__, __WEBPACK_EXTERNAL_MODULE_45__) {
+		root["angularCalendar"] = factory(root["ng"]["core"], root["calendarUtils"], root["rx"]["Subject"], root["angularResizableElement"], root["ng"]["common"], root["angularDraggableDroppable"], root["dateFns"]["addDays"], root["dateFns"]["addMinutes"], root["dateFns"]["addSeconds"], root["dateFns"]["differenceInSeconds"], root["dateFns"]["getDate"], root["dateFns"]["getISOWeek"], root["dateFns"]["getMonth"], root["dateFns"]["getYear"], root["dateFns"]["isSameDay"], root["dateFns"]["setDate"], root["dateFns"]["setMonth"], root["dateFns"]["setYear"], root["ng"]["platformBrowser"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_24__, __WEBPACK_EXTERNAL_MODULE_25__, __WEBPACK_EXTERNAL_MODULE_33__, __WEBPACK_EXTERNAL_MODULE_34__, __WEBPACK_EXTERNAL_MODULE_35__, __WEBPACK_EXTERNAL_MODULE_36__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__, __WEBPACK_EXTERNAL_MODULE_40__, __WEBPACK_EXTERNAL_MODULE_41__, __WEBPACK_EXTERNAL_MODULE_42__, __WEBPACK_EXTERNAL_MODULE_43__, __WEBPACK_EXTERNAL_MODULE_44__, __WEBPACK_EXTERNAL_MODULE_45__, __WEBPACK_EXTERNAL_MODULE_46__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 47);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -536,7 +536,7 @@ var CalendarDayViewComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__angular_core__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_calendar_utils__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_calendar_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_calendar_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_date_fns_add_minutes__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_date_fns_add_minutes__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_date_fns_add_minutes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_date_fns_add_minutes__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_calendarDragHelper_provider__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_calendarResizeHelper_provider__ = __webpack_require__(22);
@@ -794,23 +794,23 @@ var CalendarMonthCellComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_calendar_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_calendar_utils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_is_same_day__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_is_same_day__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_is_same_day___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_date_fns_is_same_day__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_date_fns_set_date__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_date_fns_set_date__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_date_fns_set_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_date_fns_set_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns_set_month__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns_set_month__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns_set_month___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_date_fns_set_month__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns_set_year__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns_set_year__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns_set_year___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns_set_year__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_date_fns_get_date__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_date_fns_get_date__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_date_fns_get_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_date_fns_get_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_date_fns_get_month__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_date_fns_get_month__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_date_fns_get_month___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_date_fns_get_month__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_date_fns_get_year__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_date_fns_get_year__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_date_fns_get_year___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_date_fns_get_year__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_date_fns_difference_in_seconds__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_date_fns_difference_in_seconds__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_date_fns_difference_in_seconds___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_date_fns_difference_in_seconds__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_date_fns_add_seconds__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_date_fns_add_seconds__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_date_fns_add_seconds___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_date_fns_add_seconds__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalendarMonthViewComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1092,7 +1092,7 @@ var CalendarOpenDayEventsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_calendar_utils__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_calendar_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_calendar_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_add_days__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_add_days__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns_add_days___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_date_fns_add_days__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_calendarDragHelper_provider__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_calendarResizeHelper_provider__ = __webpack_require__(22);
@@ -1317,7 +1317,7 @@ var CalendarWeekViewComponent = (function () {
     CalendarWeekViewComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'mwl-calendar-week-view',
-            template: ""
+            template: "\n    <div class=\"cal-week-view\" #weekViewContainer>\n      <div class=\"cal-day-headers\">\n        <mwl-calendar-week-view-header\n          *ngFor=\"let day of days\"\n          [day]=\"day\"\n          [locale]=\"locale\"\n          (click)=\"dayClicked.emit({date: day.date})\">\n        </mwl-calendar-week-view-header>\n      </div>\n      <div *ngFor=\"let eventRow of eventRows\" #eventRowContainer>\n        <div\n          class=\"cal-event-container\"\n          #event\n          [class.cal-draggable]=\"weekEvent.event.draggable\"\n          *ngFor=\"let weekEvent of eventRow.row\"\n          [style.width]=\"((100 / 7) * weekEvent.span) + '%'\"\n          [style.marginLeft]=\"((100 / 7) * weekEvent.offset) + '%'\"\n          mwlResizable\n          [resizeEdges]=\"{left: weekEvent.event?.resizable?.beforeStart, right: weekEvent.event?.resizable?.afterEnd}\"\n          [resizeSnapGrid]=\"{left: getDayColumnWidth(eventRowContainer), right: getDayColumnWidth(eventRowContainer)}\"\n          [validateResize]=\"validateResize\"\n          (resizeStart)=\"resizeStarted(weekViewContainer, weekEvent, $event)\"\n          (resizing)=\"resizing(weekEvent, $event, getDayColumnWidth(eventRowContainer))\"\n          (resizeEnd)=\"resizeEnded(weekEvent)\"\n          mwlDraggable\n          [dragAxis]=\"{x: weekEvent.event.draggable && !currentResize, y: false}\"\n          [dragSnapGrid]=\"{x: getDayColumnWidth(eventRowContainer)}\"\n          [validateDrag]=\"validateDrag\"\n          (dragStart)=\"dragStart(weekViewContainer, event)\"\n          (dragEnd)=\"eventDragged(weekEvent, $event.x, getDayColumnWidth(eventRowContainer))\">\n          <mwl-calendar-week-view-event\n            [weekEvent]=\"weekEvent\"\n            [tooltipPlacement]=\"tooltipPlacement\"\n            (eventClicked)=\"eventClicked.emit({event: weekEvent.event})\">\n          </mwl-calendar-week-view-event>\n        </div>\n      </div>\n    </div>\n  "
         }),
         __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"])), 
         __metadata('design:paramtypes', [(typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]) === 'function' && _e) || Object, String])
@@ -1434,7 +1434,7 @@ var CalendarWeekViewHeaderComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__angular_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap_util_positioning__ = __webpack_require__(32);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalendarTooltipWindowComponent; });
@@ -1673,7 +1673,7 @@ var CalendarDragHelper = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns_get_iso_week__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns_get_iso_week__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns_get_iso_week___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_date_fns_get_iso_week__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalendarNativeDateFormatter; });
 
@@ -1888,23 +1888,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angular_common__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular_resizable_element__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular_resizable_element___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular_resizable_element__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_day_calendarDayView_component__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_week_calendarWeekView_component__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_month_calendarMonthView_component__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_common_calendarEventActions_component__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_common_calendarEventTitle_component__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_month_calendarMonthCell_component__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_month_calendarOpenDayEvents_component__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_week_calendarWeekViewHeader_component__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_week_calendarWeekViewEvent_component__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_day_calendarAllDayEvent_component__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_day_calendarDayViewHourSegment_component__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_day_calendarDayViewEvent_component__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_calendarTooltip_directive__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_calendarDate_pipe__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pipes_calendarEventTitle_pipe__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_calendarEventTitle_provider__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_calendarDateFormatter_provider__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_draggable_droppable__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_draggable_droppable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular_draggable_droppable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_day_calendarDayView_component__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_week_calendarWeekView_component__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_month_calendarMonthView_component__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_common_calendarEventActions_component__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_common_calendarEventTitle_component__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_month_calendarMonthCell_component__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_month_calendarOpenDayEvents_component__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_week_calendarWeekViewHeader_component__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_week_calendarWeekViewEvent_component__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_day_calendarAllDayEvent_component__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_day_calendarDayViewHourSegment_component__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_day_calendarDayViewEvent_component__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pipes_calendarDate_pipe__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pipes_calendarEventTitle_pipe__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_calendarEventTitle_provider__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_calendarDateFormatter_provider__ = __webpack_require__(2);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalendarModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1935,6 +1937,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CalendarModule = (function () {
     function CalendarModule() {
     }
@@ -1942,42 +1945,43 @@ var CalendarModule = (function () {
         return {
             ngModule: CalendarModule,
             providers: [
-                __WEBPACK_IMPORTED_MODULE_18__providers_calendarEventTitle_provider__["a" /* CalendarEventTitleFormatter */],
-                __WEBPACK_IMPORTED_MODULE_19__providers_calendarDateFormatter_provider__["a" /* CalendarDateFormatter */]
+                __WEBPACK_IMPORTED_MODULE_19__providers_calendarEventTitle_provider__["a" /* CalendarEventTitleFormatter */],
+                __WEBPACK_IMPORTED_MODULE_20__providers_calendarDateFormatter_provider__["a" /* CalendarDateFormatter */]
             ]
         };
     };
     CalendarModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__components_day_calendarDayView_component__["a" /* CalendarDayViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__components_week_calendarWeekView_component__["a" /* CalendarWeekViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__components_month_calendarMonthView_component__["a" /* CalendarMonthViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__components_common_calendarEventActions_component__["a" /* CalendarEventActionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__components_common_calendarEventTitle_component__["a" /* CalendarEventTitleComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__components_month_calendarMonthCell_component__["a" /* CalendarMonthCellComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__components_month_calendarOpenDayEvents_component__["a" /* CalendarOpenDayEventsComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_week_calendarWeekViewHeader_component__["a" /* CalendarWeekViewHeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_week_calendarWeekViewEvent_component__["a" /* CalendarWeekViewEventComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_day_calendarAllDayEvent_component__["a" /* CalendarAllDayEventComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_day_calendarDayViewHourSegment_component__["a" /* CalendarDayViewHourSegmentComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_day_calendarDayViewEvent_component__["a" /* CalendarDayViewEventComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__directives_calendarTooltip_directive__["b" /* CalendarTooltipDirective */],
-                __WEBPACK_IMPORTED_MODULE_16__pipes_calendarDate_pipe__["a" /* CalendarDate */],
-                __WEBPACK_IMPORTED_MODULE_17__pipes_calendarEventTitle_pipe__["a" /* CalendarEventTitle */]
+                __WEBPACK_IMPORTED_MODULE_4__components_day_calendarDayView_component__["a" /* CalendarDayViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_week_calendarWeekView_component__["a" /* CalendarWeekViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_month_calendarMonthView_component__["a" /* CalendarMonthViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__components_common_calendarEventActions_component__["a" /* CalendarEventActionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__components_common_calendarEventTitle_component__["a" /* CalendarEventTitleComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__components_month_calendarMonthCell_component__["a" /* CalendarMonthCellComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_month_calendarOpenDayEvents_component__["a" /* CalendarOpenDayEventsComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_week_calendarWeekViewHeader_component__["a" /* CalendarWeekViewHeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_week_calendarWeekViewEvent_component__["a" /* CalendarWeekViewEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_day_calendarAllDayEvent_component__["a" /* CalendarAllDayEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_day_calendarDayViewHourSegment_component__["a" /* CalendarDayViewHourSegmentComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_day_calendarDayViewEvent_component__["a" /* CalendarDayViewEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["b" /* CalendarTooltipDirective */],
+                __WEBPACK_IMPORTED_MODULE_17__pipes_calendarDate_pipe__["a" /* CalendarDate */],
+                __WEBPACK_IMPORTED_MODULE_18__pipes_calendarEventTitle_pipe__["a" /* CalendarEventTitle */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
-                __WEBPACK_IMPORTED_MODULE_2_angular_resizable_element__["ResizableModule"]
+                __WEBPACK_IMPORTED_MODULE_2_angular_resizable_element__["ResizableModule"],
+                __WEBPACK_IMPORTED_MODULE_3_angular_draggable_droppable__["DragAndDropModule"]
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__components_day_calendarDayView_component__["a" /* CalendarDayViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__components_week_calendarWeekView_component__["a" /* CalendarWeekViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__components_month_calendarMonthView_component__["a" /* CalendarMonthViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__pipes_calendarDate_pipe__["a" /* CalendarDate */]
+                __WEBPACK_IMPORTED_MODULE_4__components_day_calendarDayView_component__["a" /* CalendarDayViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_week_calendarWeekView_component__["a" /* CalendarWeekViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_month_calendarMonthView_component__["a" /* CalendarMonthViewComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__pipes_calendarDate_pipe__["a" /* CalendarDate */]
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_15__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */]]
         }), 
         __metadata('design:paramtypes', [])
     ], CalendarModule);
@@ -2288,6 +2292,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_45__;
 
 /***/ },
 /* 46 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_46__;
+
+/***/ },
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
