@@ -60,7 +60,19 @@ export var CalendarModule = (function () {
                         CalendarDayViewComponent,
                         CalendarWeekViewComponent,
                         CalendarMonthViewComponent,
-                        CalendarDate
+                        CalendarEventActionsComponent,
+                        CalendarEventTitleComponent,
+                        CalendarMonthCellComponent,
+                        CalendarOpenDayEventsComponent,
+                        CalendarWeekViewHeaderComponent,
+                        CalendarWeekViewEventComponent,
+                        CalendarAllDayEventComponent,
+                        CalendarDayViewHourSegmentComponent,
+                        CalendarDayViewEventComponent,
+                        CalendarTooltipWindowComponent,
+                        CalendarTooltipDirective,
+                        CalendarDate,
+                        CalendarEventTitlePipe
                     ],
                     entryComponents: [CalendarTooltipWindowComponent]
                 },] },

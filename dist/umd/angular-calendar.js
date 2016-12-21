@@ -419,7 +419,19 @@ var CalendarModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__components_day_calendarDayView_component__["a" /* CalendarDayViewComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__components_week_calendarWeekView_component__["a" /* CalendarWeekViewComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__components_month_calendarMonthView_component__["a" /* CalendarMonthViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__pipes_calendarDate_pipe__["a" /* CalendarDate */]
+                __WEBPACK_IMPORTED_MODULE_7__components_common_calendarEventActions_component__["a" /* CalendarEventActionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__components_common_calendarEventTitle_component__["a" /* CalendarEventTitleComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__components_month_calendarMonthCell_component__["a" /* CalendarMonthCellComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_month_calendarOpenDayEvents_component__["a" /* CalendarOpenDayEventsComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_week_calendarWeekViewHeader_component__["a" /* CalendarWeekViewHeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_week_calendarWeekViewEvent_component__["a" /* CalendarWeekViewEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_day_calendarAllDayEvent_component__["a" /* CalendarAllDayEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_day_calendarDayViewHourSegment_component__["a" /* CalendarDayViewHourSegmentComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_day_calendarDayViewEvent_component__["a" /* CalendarDayViewEventComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["b" /* CalendarTooltipDirective */],
+                __WEBPACK_IMPORTED_MODULE_17__pipes_calendarDate_pipe__["a" /* CalendarDate */],
+                __WEBPACK_IMPORTED_MODULE_18__pipes_calendarEventTitle_pipe__["a" /* CalendarEventTitle */]
             ],
             entryComponents: [__WEBPACK_IMPORTED_MODULE_16__directives_calendarTooltip_directive__["a" /* CalendarTooltipWindowComponent */]]
         }), 
