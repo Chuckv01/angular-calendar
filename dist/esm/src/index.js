@@ -20,4 +20,7 @@ export * from './components/common/calendarEventTitle.component';
 export * from './directives/calendarTooltip.directive';
 export * from './pipes/calendarDate.pipe';
 export * from './pipes/calendarEventTitle.pipe';
+export * from '@angular/common';
+export * from 'angular-resizable-element';
+export * from 'angular-draggable-droppable';
 //# sourceMappingURL=index.js.map
